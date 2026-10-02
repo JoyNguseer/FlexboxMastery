@@ -1,0 +1,64 @@
+body {
+    background-color: #0f172a; /*Sleek dark slate blue*/
+    color: #f8fafc;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 40px;
+    text-align: center;
+}
+
+/* THE PARENT:Turning this on changes everything*/
+.dashboard-container {
+    display: flex; /* Flexbox layout for the cards */
+    justify-content:space-between; /* Spreads cards evenly across the screen*/
+    align-items: center;           /* Centers cards vertically */
+    background-color:#1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    min-height: 300px;
+}
+
+/* THE CHILDREN: Styling for each card */
+.card {
+    background-color: #334155;
+    padding: 30px;
+    border-radius: 8px;
+    width: 25%;                   /* Each card takes exactly a quarter of the width*/
+    border-bottom: 4px solid #38bdf8; /* Bright neon blue accent line */
+}
+
+/* NAVBAR PARENT: Pushes logo to the left and links to the right*/
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Logo on the left, links on the right */
+    align-items: center;
+    background-color: #1e293b;
+    padding: 15px 30px;
+    border-radius: 8px;
+    margin-bottom:40px;
+}
+
+/* LOGO STYLING*/
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #38bdf8; /* Neon blue for the logo */
+}
+
+/* LINKS PARENT: Lines up links horizontally */
+.nav-links {
+    display: flex;
+    gap: 20px; /* Space between each link */
+}
+
+/* LINKS CHILDREN: Styling for each navigation link */
+.nav-links a {
+    color: #f8fafc;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease; 
+}
+
+/* NAVBAR LINKS: Hover effect for navigation links */
+.nav-links a:hover {
+    color: #38bdf8; /* Change to neon blue on hover */
+}
